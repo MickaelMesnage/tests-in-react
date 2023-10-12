@@ -8,6 +8,7 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./tests/setup.ts",
+    include: ["src/**/*.spec.tsx"],
     env: {
       IS_REACT_ACT_ENVIRONMENT: "true",
     },
