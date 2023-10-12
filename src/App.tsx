@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Counter } from "./components/Counter/Counter";
+import { PostList } from "./components/PostList/PostList";
 
 function App() {
   const [showCounter, setShowCounter] = useState<boolean>(false);
@@ -16,6 +17,8 @@ function App() {
         Show counter
       </button>
       {showCounter && <Counter />}
+      <h2>Post List</h2>
+      <PostList />
     </>
   );
 }
